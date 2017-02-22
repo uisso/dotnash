@@ -4,4 +4,11 @@ fn ls() {
         ls --color=auto -aF
 }
 
+fn ls_lash() {
+        ls --color=auto -lashF
+
+}
+
 bindfn ls lsa
+
+bindfn ls_lash ll
