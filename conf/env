@@ -1,14 +1,11 @@
 # Setup environment variables
 
 GOVERSION     = "go1.7"
-PLAN9         = $HOME+"/projects/github/plan9port/"
-GOPATH        = $HOME+"/projects/go-workspace"
+GOPATH        = $HOME+"/neoway/environment/workspaces"
 LBIN          = $HOME+"/bin"
 FZFPATH       = $HOME+"/.fzf"
-GOROOT        = $HOME+"/projects/github/go"
 CDPATH        = ($HOME $GOPATH+"/src")
 LANG          = "en_US.UTF-8"
-ENCFS6_CONFIG = "/data/Home/.encfs6.xml"
 PATH          = ""
 paths = (
 	"/bin"
@@ -18,7 +15,6 @@ paths = (
 	"/usr/local/bin"
 	$GOROOT+"/bin"
 	$GOPATH+"/bin"
-	$PLAN9+"/bin"
 	$FZFPATH+"/bin"
 	$LBIN
 )
@@ -28,7 +24,5 @@ for p in $paths {
 }
 
 setenv LANG
-setenv PLAN9
 setenv GOPATH
 setenv PATH
-setenv ENCFS6_CONFIG
